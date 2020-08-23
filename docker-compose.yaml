@@ -39,6 +39,17 @@ services:
     volumes:
       - "./storage/db-data:/var/lib/mysql"
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: symfonysub_phpmyadmin
+    environment:
+      PMA_HOST: kafka_consumer_mysql_db
+      PMA_PORT: 3306
+    ports:
+      - 8083:80
+    links:
+      - kafka_consumer_mysql_db
+
 networks:
   proxynet:
     name: pub_sub_network
