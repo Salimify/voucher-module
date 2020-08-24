@@ -71,7 +71,7 @@ php bin/console app:populate-orders
 
 **7- Browse http://localhost:8787 to verify that Order Module is up and running.**
 
-<img src="https://i.ibb.co/3zVsv4w/1.jpg" alt="1" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>
+<img src="https://i.ibb.co/3zVsv4w/1.jpg" alt="1">
 
 Voucher Module 
 ---
