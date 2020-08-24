@@ -21,11 +21,13 @@ We proceeded to create two different <b>Microservices</b>: <b>Order Module</b> a
 <b>Voucher Module:</b> It will consume the upcoming events, and if the event is “GENERATE_VOUCHER_COMMAND” , the Microservice will trigger a command to generate and save the voucher for the correspondent order in its own database.
 
 
-<h2>Installation</h2>
-
-<h4>1- Install Docker and Docker-compose in your machine</h4>
+Installation
+---
+**1- Install Docker and Docker-compose in your machine**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.docker.com/products/docker-desktop <br>
-####2- Create a custom docker network (pub_sub_network)
+
+
+**2- Create a custom docker network (pub_sub_network)**
 - In order to communicate the two microservices
 ```
 docker network create pub_sub_network
