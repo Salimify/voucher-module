@@ -11,4 +11,3 @@ sb_kafka:
             group.id: 'myConsumerGroup'
             log.connection.close: 'false'
             metadata.broker.list: '%env(resolve:KAFKA_BROKERS)%'
-            #debug: 'msg'

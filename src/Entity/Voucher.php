@@ -27,6 +27,11 @@ class Voucher
      */
     private $order_id;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $voucher_value = 5;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -62,6 +67,22 @@ class Voucher
     public function setOrderId($order_id): void
     {
         $this->order_id = $order_id;
+    }
+
+    /**
+     * @return int
+     */
+    public function getVoucherValue(): int
+    {
+        return $this->voucher_value;
+    }
+
+    /**
+     * @param int $voucher_value
+     */
+    public function setVoucherValue(int $voucher_value): void
+    {
+        $this->voucher_value = $voucher_value;
     }
 
 
